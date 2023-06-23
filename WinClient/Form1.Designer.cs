@@ -45,6 +45,7 @@
             btnSignIn.TabIndex = 0;
             btnSignIn.Text = "Sign In";
             btnSignIn.UseVisualStyleBackColor = true;
+            btnSignIn.Click += btnSignIn_Click;
             // 
             // btnSend
             // 
@@ -54,6 +55,7 @@
             btnSend.TabIndex = 1;
             btnSend.Text = "Send";
             btnSend.UseVisualStyleBackColor = true;
+            btnSend.Click += btnSend_Click;
             // 
             // txtNick
             // 

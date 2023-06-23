@@ -11,7 +11,8 @@ namespace WinClient
             InitializeComponent();
         }
 
-        const int portNo = 500;
+        const int portNo = 25000;
+
         TcpClient client;
         byte[] data;
 
@@ -24,6 +25,7 @@ namespace WinClient
                     //---connect to server---
                     client = new TcpClient();
                     client.Connect("127.0.0.1", portNo);
+                    Console.WriteLine("connected");
                     data = new byte[client.ReceiveBufferSize];
                     //---read from server---
                     SendMessage(txtNick.Text);
@@ -122,6 +124,11 @@ namespace WinClient
         {
 
         }
+
+        /*private void btnSignIn_Click_1(object sender, EventArgs e)
+        {
+
+        }*/
 
         /*private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
